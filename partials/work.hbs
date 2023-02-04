@@ -13,8 +13,10 @@
             <span class='organization'>{{name}}</span>
             <span class='title'>{{position}}</span>
             <span class='date'>
-              <time datetime="{{startDate}}">{{MONTH_YEAR startDate}}</time> &mdash;
-              {{#if endDate}}<time datetime="{{endDate}}">{{MONTH_YEAR endDate}}</time>{{else}}Present{{/if}}
+              <span style="text-align: end;"><time datetime="{{startDate}}">{{MONTH_YEAR startDate}}</time></span>
+              <span>&mdash;</span>
+              {{#if endDate}}<span style="width: 63px; text-align: start; display: inline-block;" ><time datetime="{{endDate}}">{{MONTH_YEAR endDate}}</time></span>
+              {{else}}<span style="width: 63px; text-align: start; display: inline-block;" >Present</span>{{/if}}
             </span>
           </div>
 
@@ -29,7 +31,7 @@
           </div>
 
           {{#if highlights.length}}
-            <ul class='highlights'>
+            <ul class='highlights-work'>
               {{#each highlights}}
                 <li>{{.}}</li>
               {{/each}}

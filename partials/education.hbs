@@ -12,8 +12,9 @@
           <span class='title'>{{institution}}</span>
           {{#if startDate}}
             <span class='date'>
-              {{#if startDate}}{{MONTH_YEAR startDate}}{{/if}} &mdash;
-              {{#if endDate}}{{MONTH_YEAR endDate}}{{else}}Present{{/if}}
+              {{#if startDate}}<span style="text-align: end;" >{{MONTH_YEAR startDate}}</span>{{/if}} &mdash;
+              {{#if endDate}}<span style="width: 63px; text-align: start; display: inline-block;" >{{MONTH_YEAR endDate}}</span>
+              {{else}}<span style="width: 63px; text-align: start; display: inline-block;" >Present</span>{{/if}}
             </span>
           {{/if}}
           <div class=''>

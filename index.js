@@ -167,6 +167,12 @@ Handlebars.registerHelper('STATE_NAME_TO_ABBREVIATION', (state) => {
   return state;
 })
 
+Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+  console.log(arg1, arg2)
+  return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});
+
+
 exports.render = resume => {
   const css = fs.readFileSync(path.join(__dirname, 'style.css'), 'utf-8')
   const template = fs.readFileSync(path.join(__dirname, 'resume.hbs'), 'utf-8')

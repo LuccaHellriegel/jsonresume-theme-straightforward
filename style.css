@@ -49,6 +49,10 @@ a {
   justify-content: space-between;
 }
 
+.highlights-work {
+  max-width: 76%;
+}
+
 .basics>* {
   flex-grow: 1;
   flex-shrink: 1;
