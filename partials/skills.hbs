@@ -10,7 +10,9 @@
       <ul class='highlights'>
         {{#each resume.skills}}
           <li>
+            {{#if name}}
             <span class='title'>{{name}}:</span>
+            {{/if}}
             {{#if keywords.length}}
               {{#each keywords}}
                 <span>{{.}}</span>{{#unless @last}}, {{/unless}}{{#if @last}}.{{/if}}
