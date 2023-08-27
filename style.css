@@ -3,7 +3,7 @@ body {
   /* 13px to 15px looks good */
   font-size: 15px;
   /* 1.38, 1.4, or 1.5 looks good */
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ a {
   border-color: none;
   border-style: hidden;
   border-width: 1px;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 5px;
 }
 
